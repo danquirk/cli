@@ -69,7 +69,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.Cli.Utils", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.Cli.Utils", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -77,7 +77,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.ProjectModel", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.ProjectModel", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -85,7 +85,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.ProjectModel.Loader", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.ProjectModel.Loader", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -93,7 +93,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.ProjectModel.Workspaces", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.ProjectModel.Workspaces", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -101,7 +101,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.InternalAbstractions", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.InternalAbstractions", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -109,7 +109,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.Extensions.DependencyModel", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.Extensions.DependencyModel", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -117,7 +117,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.Extensions.Testing.Abstractions", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.Extensions.Testing.Abstractions", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -125,7 +125,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.Compiler.Common", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.Compiler.Common", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -133,7 +133,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "Microsoft.DotNet.Files", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/Microsoft.DotNet.Files", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             },
@@ -141,7 +141,7 @@ namespace Microsoft.DotNet.Cli.Build
             { 
                 Name = "dotnet-compile-fsc", 
                 IsTool = true, 
-                Path = "TestAssets/TestPackages/dotnet-hello/v1/dotnet-hello", 
+                Path = "src/dotnet-compile-fsc", 
                 IsApplicable = new Func<bool>(() => true),
                 VersionSuffix = s_testPackageBuildVersionSuffix
             }
