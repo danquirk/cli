@@ -142,7 +142,20 @@ namespace Microsoft.DotNet.Cli.Build
                 var fullPath = Path.Combine(c.BuildContext.BuildDirectory, relativePath.Replace('/', Path.DirectorySeparatorChar));
                 c.Info($"Packing: {fullPath}");
 
-                var dotnetPackArgs = new List<string> { "--output", Dirs.TestPackages };
+                // build and ignore failure, so net451 fail on non-windows doesn't crash the build
+
+                Mkdirp(Dirs.TestPackagesBuild);
+                var packBuildResult = DotNetCli.Stage1.Build(
+                    "--build-base-path",
+                    Dirs.TestPackagesBuild,
+                    fullPath)
+                    .Execute();
+
+                var dotnetPackArgs = new List<string> { 
+                    "--no-build",
+                    "--build-base-path", Dirs.TestPackagesBuild,
+                    "--output", Dirs.TestPackages 
+                };
 
                 if (!string.IsNullOrEmpty(versionSuffix))
                 {
